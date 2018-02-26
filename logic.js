@@ -87,7 +87,7 @@ var count = 0;
     // console.log(randomWordArray);
     // ["j", "o", "l", "l", "y"]
     // ["_", "_", "_"]
-    blanksAndSuccesses.join(' '); // "_ _ _ _ _ _"
+    //var displayString = blanksAndSuccesses.join(' '); // "_ _ _ _ _ _"
     for(var i = 0; i < randomWordArray.length; i++) {
       if(randomWordArray[i] === input) {
         console.log('you found it!');
@@ -102,8 +102,11 @@ var count = 0;
       } else {
         // incorrectLetters[i].indexOf(input)!= randomWordArray {
           console.log('pink elephants');
+          //check if incorrect letters contain the input
+          if(incorrectLetters.indexOf(input) === -1) {
+            incorrectLetters.push(input);
 
-          incorrectLetters.push(input);
+          }
           document.querySelector("#lettersGuessed").innerHTML = incorrectLetters;
           //console.log()
         }
