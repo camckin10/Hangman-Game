@@ -3,6 +3,7 @@ Hangman Game (Javascript)
 
 How Does It Work?
 Created an interactive candy-themed Hangman game using vanilla JavaScript.
+Technologies used: HTML5, CSS3,JavaScript, and Bootstrap
 
 Who will use this?
 Any individual interested in playing Hangman!
